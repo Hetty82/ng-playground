@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router'
 
 import { appRoutes } from './routes'
 
+import { MediaService} from './media/media.service'
+
 import { AppComponent } from './app.component'
 import { TestComponent } from './test/test.component'
 import { Test2Component } from './test2/test2.component'
@@ -11,6 +13,7 @@ import { StickiesComponent } from './stickies/stickies.component'
 import { LayoutComponent } from './layout/layout.component'
 import { HeaderComponent } from './header/header.component'
 import { SidebarComponent } from './sidebar/sidebar.component'
+import { MediaComponent } from './media/media.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { SidebarComponent } from './sidebar/sidebar.component'
     StickiesComponent,
     LayoutComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { SidebarComponent } from './sidebar/sidebar.component'
       { enableTracing: true }
     )
   ],
-  providers: [],
+  providers: [
+    MediaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -161,7 +161,7 @@ module.exports = {
             "options": {
               "sourceMap": false,
               "precision": 8,
-              "data": "@import \"variables\"",
+              "data": "@import \"variables\" \n\\:host \n  display: block",
               "includePaths": [
                 "/Users/hettydevries/Dropbox/WebDevelopment/Leren/Angular/playground/src/styles"
               ]
