@@ -2,10 +2,27 @@
   // CSSComb
   "csscomb.preset": {
     "always-semicolon": false,
-    "space-after-combinator": false
+    "color-case": "lower",
+    "block-indent": "  ",
+    "element-case": "lower",
+    "eof-newline": true,
+    "leading-zero": true,
+    "space-before-colon": "",
+    "space-after-colon": " ",
+    "space-after-combinator": true,
+    "space-before-opening-brace": " ",
+    "space-after-opening-brace": "\n",
+    "space-after-selector-delimiter": "\n",
+    "space-before-selector-delimiter": "",
+    "space-before-closing-brace": "\n",
+    "strip-spaces": true,
+    "tab-size": true,
+    "unitless-zero": true,
+    "vendor-prefix-align": true
   },
   "csscomb.ignoreFilesOnSave": [
-    "**/_variables/*.scss"
+    "**/_variables.sass",
+    "**/_reset.sass"
   ],
   "csscomb.formatOnSave": true
 }
