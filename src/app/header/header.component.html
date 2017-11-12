@@ -1,7 +1,6 @@
-<header class="header">
-  <span class="logo">hetty82.nl</span>
-  <nav>
-    <a routerLink="/" routerLinkActive="active">home</a>
-    <a routerLink="/stickies" routerLinkActive="active">stickies</a>
-  </nav>
-</header>
+<span class="logo">hetty82.nl</span>
+<h1 class="title">Angular Playground</h1>
+<nav>
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">home</a>
+  <a routerLink="/stickies" routerLinkActive="active">stickies</a>
+</nav>

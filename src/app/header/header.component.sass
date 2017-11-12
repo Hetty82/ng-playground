@@ -1,10 +1,22 @@
 \:host
-  display: block
-
-header
   display: flex
+  height: 3em
   padding: $spacing-default
   justify-content: space-between
+  align-items: center
   font-family: $font-family-sans
   background: $blue
+
+h1
+  margin: 0
+
+a
+  padding: $spacing-small $spacing-default
+  text-decoration: none
+  color: black
+  border-radius: $border-radius
+  background: darken($blue, 20%)
+
+  &.active
+    background: darken($blue, 30%)
 

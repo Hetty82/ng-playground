@@ -10,6 +10,7 @@ import { Test2Component } from './test2/test2.component'
 import { StickiesComponent } from './stickies/stickies.component'
 import { LayoutComponent } from './layout/layout.component'
 import { HeaderComponent } from './header/header.component'
+import { SidebarComponent } from './sidebar/sidebar.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component'
     Test2Component,
     StickiesComponent,
     LayoutComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

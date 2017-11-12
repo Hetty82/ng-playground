@@ -1,28 +1,54 @@
 {
+
+  // List of paths to ignore when using VS Code format command, including format on save. Uses glob pattern matching.
+  "beautify.ignore": [],
+
+  // Link file types to the beautifier type
+  "beautify.language": {
+    "js": {
+      "type": [
+        "javascript",
+        "json"
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautify"
+      ]
+    },
+    "css": [
+      "css",
+      "scss",
+      "sass"
+    ],
+    "html": [
+      "htm",
+      "html"
+    ]
+  },
+
   // CSSComb
   "csscomb.preset": {
-    "always-semicolon": false,
-    "color-case": "lower",
-    "block-indent": "  ",
-    "element-case": "lower",
-    "eof-newline": true,
-    "leading-zero": true,
-    "space-before-colon": "",
-    "space-after-colon": " ",
-    "space-after-combinator": true,
-    "space-before-opening-brace": " ",
-    "space-after-opening-brace": "\n",
-    "space-after-selector-delimiter": "\n",
-    "space-before-selector-delimiter": "",
-    "space-before-closing-brace": "\n",
-    "strip-spaces": true,
-    "tab-size": true,
-    "unitless-zero": true,
-    "vendor-prefix-align": true
+    // "always-semicolon": false,
+    // "color-case": "lower",
+    // "block-indent": "  ",
+    // "element-case": "lower",
+    // "eof-newline": false,
+    // "leading-zero": true,
+    // "space-before-colon": "",
+    // "space-after-colon": " ",
+    // "space-after-combinator": true,
+    // "space-before-opening-brace": " ",
+    // "space-after-opening-brace": "\n",
+    // "space-after-selector-delimiter": "\n",
+    // "space-before-selector-delimiter": "",
+    // "space-before-closing-brace": "\n",
+    // "strip-spaces": true,
+    // "tab-size": true,
+    // "unitless-zero": true,
   },
   "csscomb.ignoreFilesOnSave": [
     "**/_variables.sass",
     "**/_reset.sass"
   ],
-  "csscomb.formatOnSave": true
+  "csscomb.formatOnSave": false
 }
