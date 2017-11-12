@@ -1,0 +1,11 @@
+{
+  // CSSComb
+  "csscomb.preset": {
+    "always-semicolon": false,
+    "space-after-combinator": false
+  },
+  "csscomb.ignoreFilesOnSave": [
+    "**/_variables/*.scss"
+  ],
+  "csscomb.formatOnSave": true
+}
